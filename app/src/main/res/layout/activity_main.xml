@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <AbsoluteLayout
+        android:id="@+id/AbsoluteLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </AbsoluteLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/stopbuttonBorrar"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#AA000000"-->
+        <!--android:text="stop"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="14sp"-->
+        <!--android:width="80dp" />-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#ffdb0c13">-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/stopbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/playbutton"
+            android:background="#AA000000"
+            android:text="stop"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:width="80dp" />
+
+        <Button
+            android:id="@+id/touchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/scrubber"
+            android:layout_marginLeft="1dp"
+            android:background="#AA000000"
+            android:text="motion"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:width="80dp" />
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/scrubber"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/stopbutton"
+            android:background="#AA000000"
+            android:text="play"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:width="80dp" />
+
+        <SeekBar
+            android:id="@+id/scrubber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="1dip"
+            android:layout_toLeftOf="@+id/touchbutton"
+            android:layout_toRightOf="@+id/playbutton"
+            android:background="#AA000000"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="6dp" />
+
+
+
+    </RelativeLayout>
+    <SurfaceView
+        android:id="@+id/surfViewLibrary"
+        android:layout_width="100dp"
+        android:layout_height="190dp"/>
+    <VideoView
+        android:id="@+id/surfView"
+        android:layout_width="100dp"
+        android:layout_height="190dp"/>
+
+</FrameLayout>
